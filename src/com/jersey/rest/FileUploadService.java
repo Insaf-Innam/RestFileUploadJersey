@@ -35,6 +35,8 @@ public class FileUploadService {
 			out.close();
 		} catch (IOException IoException) {
 			IoException.printStackTrace();
+		}catch (Exception exception) {
+			exception.printStackTrace();
 		}
 		String output = "File successfully uploaded to : " + fileLocation;
 
